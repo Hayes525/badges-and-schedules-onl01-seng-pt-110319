@@ -2,8 +2,7 @@ require 'spec_helper'
 
 describe 'conference_badges' do
 
-  let(:name) {"Arel"}
-  let(:attendees) {["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]}
+  let(:names) {["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]}
   let(:badges) {[
                   "Hello, my name is Edsger.",
                   "Hello, my name is Ada.",

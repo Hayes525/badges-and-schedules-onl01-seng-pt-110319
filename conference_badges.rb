@@ -1,15 +1,32 @@
-# Write your code here.
-conference_badges = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"] 
-  
 
-badge_maker(conference_badges)
-class name 
-  include Enumerable
-def each 
-  yield 1 
+def badge_maker(name)
+  "Hello, my name is #{name}."
+end 
+
+def batch_badge_creator(names)
+  badges = []
+  names.each do |name|
+    badges << badge_maker(name)
+  end 
+  badges
 end
-batch_badge_maker
 
-assign_rooms
+def assign_rooms(rooms)
+  find_rooms = []
+  room.each_with_index do |room, number|
+    find_rooms << "Hello, #{name}! You'll be assigned to room #{number+1}!"
+  end 
+  find_rooms
+end 
 
-printer 
+def printer(array)
+  batch_badge_creator(array).each do |id|
+    puts id 
+  end
+
+  assign_rooms(array).each do |room|
+    puts room 
+  end 
+end 
+
+
